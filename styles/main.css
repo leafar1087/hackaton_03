@@ -1,0 +1,26 @@
+body{
+    background: #e6e6e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+header nav{
+    background-color: #04DB6C;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+header nav a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color:white;
+}
+
+header nav a:hover{
+    background: #04D12D;
+}
