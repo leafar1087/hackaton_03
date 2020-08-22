@@ -59,20 +59,71 @@ footer{
 
 }
 
-aside{
-    width: 30%;
-    background: #0EC49A;
-    color: whitesmoke;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: justify;
-}
-
 footer{
     background: #04DB31;
     color: white;
     clear:both;
     text-align: center;
 
+}
+
+form{
+    background-color: #0EC49A;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+label{
+    color: white;
+    width: 390px;
+    display: block;
+}
+
+#temp{
+    color: white;
+}
+
+.dni, .field, #temperatura{
+    margin-bottom: 10px;
+}
+
+.dni{
+    width: 100px;
+}
+
+.dni:focus{
+    background: #04DB31;
+  
+}
+
+.field{
+    width: 380px;
+}
+
+.field:focus{
+    background: #04DB31;
+  
+}
+
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green{
+    color: white;
+    background-color: #3cc93F;
+}
+
+.btn-green:hover{
+    background-color: #37B839;
+}
+
+.btn-green:active{
+    background-color: #29962A;
 }

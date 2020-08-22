@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <!--abreviatura para styles es link:css-->
+    <link rel="stylesheet" href="../styles/reto-3.css">
+    <script>
+        addEventListener('load',inicio,false);
+        function inicio()
+        {
+          document.getElementById('temperatura').addEventListener('change',cambioTemperatura,false);
+        }
+      
+        function cambioTemperatura()
+        {    
+          document.getElementById('temp').innerHTML=document.getElementById('temperatura').value;
+        }
+      </script> 
+</head>
+
+</script>
+<body>
+    <header>
+        <!--utilizar los div para imagenes o videos-->
+        <div>
+            <img src="../images/logo.png" alt="logotipo" width="70">
+        </div>
+        <!--utilizar el nav para establecer un menú-->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="../index.html">Regresar</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        
+        <form action="">
+            <!--en el for recibo el mismo nombre del id, si le doy clic en el label, me direcciona al text-->
+            <label for="dni">Ingresa tu DNI:</label>
+            <input id="dni" class="dni" type="text" placeholder="Escribe tu DNI" pattern="[A-Za-z0-9]{8,10}" maxlength="10" required>
+            <br/>
+            <label for="nombre">Ingresa tu nombre:</label>
+            <input id="nombre" class="field" type="text" placeholder="Escribe tu nombre" pattern="[A-Za-z]{1,30}" required>
+            <br/>
+            <label for="apellido">Ingresa tu apellido:</label>
+            <input id="apellido" class="field" type="text" placeholder="Escribe tu apellido" pattern="[A-Za-z]{1,30}" required>
+            <br/>
+            <label for="edad">Selecciona tu edad:</label>
+            <input type="range" id="temperatura" min="18" max="80">
+            <span id="temp">0</span>
+            <br>
+            <label for="correo">Ingresa tu correo electrónico:</label>
+            <input type="email" class="field" name="" id="correo" placeholder="Escribe tu correo electrónico">
+            <br/>
+            <label for="sexo">Sexo</label>
+            <select name="" id="sexo">
+                <option value="">Seleccionar</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+            <br/>
+            <br/>
+            <input type="submit" class="btn btn-green" value="Enviar datos">
+        </form>     
+    
+    </main>
+
+    <footer>
+        <p>Rafael Pérez - leafar1087 - 2020</p>
+    </footer>
+
+</body>
+</html>
