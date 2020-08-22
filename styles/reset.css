@@ -54,7 +54,23 @@ header{
 .sobre-mi{
     height: 400px;
     background-color: #7299fe;
+}
 
+.sobre-mi .sobre-mi-titulo{
+    margin: 10px, auto;
+    padding: 10px;
+    border: green 2px dotted;
+    text-align: center;
+    color: #9F04D1;
+}
+
+.sobre-mi .sobre-mi-texto{
+    margin: 200px, 100px;
+    padding: 50px 5px 10px 5px;
+    color:white;
+    width: 99%;
+    border: green 2px dotted;
+    
 }
 
 .skills{
